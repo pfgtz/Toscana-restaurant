@@ -59,7 +59,8 @@ body{
 		padding:0;
 	}
 	.paragraph{
-		padding:90px;
+		padding-right:30px;
+		padding-left:30px;
 	}
 	
 }
