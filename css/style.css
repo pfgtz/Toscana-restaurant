@@ -1,0 +1,475 @@
+/*Image for the icon*/
+/*https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1920px-Flag_of_Italy.svg.png*/
+/*Image for the background*/
+/*https://www.englishclub.com/images/vocabulary/food/italian/italian-food-1024.jpg*/
+/*Photos of the chefs*/
+/*https://www.southbmore.com/wp-content/uploads/2017/07/Ramsay.jpg*/
+/*https://idolwiki.com/pics/JamieOliver/JamieOliver.jpg*/
+/*https://www4.pictures.zimbio.com/gi/Rachael+Ray+Visits+FOX+Friends+DPTeSYVvcwqx.jpg*/
+/*Photos for the menu*/
+/*https://www.justfood.tv/nawa3emPics/galicbread.jpg*/
+/*https://www.agrodolce.it/app/uploads/2020/03/polpette-di-pane-in-brodo-2020-i-027-scaled.jpg*/
+/*https://images.meredith.com/content/dam/bhg/Images/recipe/40/R092637.jpg.rendition.largest.jpg*/
+/*https://cdn2.cocinadelirante.com/sites/default/files/images/2018/06/alitas-con-salsa-de-chile-de-arbol.jpg*/
+/*https://cdn.ilclubdellericette.it/wp-content/uploads/2017/11/Calamari-fritti-1516x1137.jpg*/
+/*https://cdn.vidaativa.pt/uploads/2020/05/salada-quente-de-beterraba-laranja-e-pistacios.jpg*/
+/*https://roccosdeli.com/wp-content/uploads/2017/10/CHICKEN-PARMIGIANO-1024x572.jpg*/
+/*https://www.thefaresage.com/wp-content/uploads/2016/03/img_40331-1024x683.jpg*/
+/*https://storenotrefamilleprod.blob.core.windows.net/images/cms/diaporama/231447/231447_large.jpg*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:  'Montserrat', sans-serif;
+}
+
+/* Utilities */
+
+
+a{
+    color:#363636;
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+button{
+    font-family: inherit;
+    outline: none;
+	text-decoration: none;
+	
+	
+}
+h1, h3, h4, h5, h6, p{
+    margin: 1.2em 0;
+}
+
+.btn{
+    background: #006400;
+    border: none;
+    color: white;
+    font-size: 0.95em;
+    padding: 0.7em;
+    display: block;
+    cursor: pointer;
+	
+}
+.btn:hover{
+    background: #363636;
+}
+.container{
+    width: 90vw;
+    margin: 20px auto;
+	margin-top:0;
+}
+.section-py{
+    padding: 5em 0;
+}
+.para-text{
+    color: #363636;
+    line-height: 1.7;
+    font-size: 0.95em;
+}
+
+.dotGreen{
+	color:green;
+	font-size:20px;
+}
+.dotWhite{
+	color:white;
+	font-size:20px;
+}
+.dotRed{
+	color:#ce3232;
+	font-size:20px;
+	
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #fff;
+	
+}
+
+.navbar-nav{
+    padding-left: 0;
+}
+.nav-brand-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3em 0;
+}
+.navbar-brand, .navbar-brandCheff{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.navbar-toggler{
+    border: none;
+    background: transparent;
+    font-size: 1.5em;
+    color: #363636;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.navbar-toggler:hover{
+    color: #ce3232;
+}
+.navbar-collapse{
+    margin: 0 auto;
+    padding-bottom: 1.6em;
+    display: none;
+}
+.nav-item{
+    padding: 0.66em 0;
+    text-align: center;
+}
+.nav-link, .call-info, .nav-linkCheff, .call-infoCheff{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+}
+.call-info, .call-infoCheff{
+    display: block;
+    text-align: center;
+    color: #363636;
+    padding: 1rem;
+    cursor: pointer;
+}
+.nav-link:hover, .call-info:hover, .nav-linkCheff:hover, .call-infoCheff:hover{
+    color: #ce3232;
+}
+.btn-top{
+    width: 280px;
+    margin: 0.2em auto;
+	
+}
+
+/* header */
+.header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../images/header-banner.jpg) center/cover fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header h2{
+    font-size: 1.2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+.header-title{
+    color: #fff;
+    font-size: 2.8em;
+    padding: 1em 0;
+}
+
+/* title */
+
+.title h2{
+	padding-top:20px;
+    text-transform: capitalize;
+    font-size: 1;
+	color:#bfbdbd;
+	cursor: pointer;
+}
+.title2 h2{
+	padding-top:0px;
+    text-transform: capitalize;
+	color:black;
+	cursor: pointer;
+	text-align: left;
+	margin-left:2em;
+	margin-bottom:0.3em;
+	
+}
+
+
+/* chef */
+.chef{
+    background: #f9f9f9;
+}
+.chef .title{
+    text-align: center;
+}
+.chef-wrapper{
+    margin: 2em 0;
+}
+.chef-item-img{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.chef-item-img img{
+    transition:all 0.5s ease;
+}
+.chef-item-img img:hover{
+    transform: scale(1.2);
+}
+.chef-overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.6s ease-in-out 0.3s;
+}
+.chef-overlay p{
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 70%;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.chef-item-img:hover .chef-overlay{
+    transform: translateY(0);
+}
+.chef-item-footer{
+    text-align: center;
+    padding: 0.8em;
+}
+.chef-item-footer h2{
+    font-size: 1.4em;
+    color: #363636;
+}
+.chef-item-footer h3{
+    color: #bfbdbd;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* menu */
+.menu.section-py{
+    padding-bottom: 0;
+}
+.menu .title{
+    text-align: center;
+}
+.menu-wrapper{
+    margin-top: 0em;
+}
+.menu-item{
+    position: relative;
+    cursor: pointer;
+	margin:5px;
+}
+.menu-overlay{
+    height: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    opacity: 0.8;
+    transition: all 0.5s ease;
+    overflow: hidden;
+	text-align: center;
+	
+}
+.menu-overlay h2{
+   padding:9px;
+   height:40px;
+   margin:0;
+   color:white;
+   opacity:1;
+   font-size:1em;
+}
+.menu-overlay{
+	padding:0;
+}
+.menu-item:hover .menu-overlay{
+    opacity: 1;
+}
+
+
+/* footer */
+.footer{
+    border-top: 0px solid #f9f9f9;
+	
+}
+.footer-item{
+    margin-bottom: 3em;
+}
+.footer-item h3{
+    opacity: 0.8;
+}
+.footer-item .para-text{
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.6;
+}
+.footer-item:nth-child(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    color: #fff;
+    padding: 2em;
+    border-radius: 1.3em;
+}
+.footer-item:nth-child(3) .para-text{
+    color: #bfbdbd;
+    line-height: 0.5;
+}
+.footer-item:nth-child(3) p:not(.para-text){
+    font-weight: 500;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons a{
+    color: #ce3232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.4em 0.6em 1em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.footer-icons a:first-child{
+    margin-left: 0;
+}
+.footer-icons a:hover{
+    background: #ce3232;
+    color: #fff;
+}
+
+/* # Media Queries # */
+
+@media screen and (min-width: 678px){
+    .menu-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+		
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header-title{
+        width: 60%;
+    }
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2em;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 85vw;
+    }
+    .navbar{
+        background: transparent;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1.2em;
+        padding-right: 7vw;
+        padding-left: 7vw;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .navbar-collapse{
+        flex: 1 0 auto;
+        display: flex!important;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+    .navbar-nav{
+        flex: 1 0 auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .nav-info{
+        flex: 0 0 300px;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-brand-toggler{
+        flex: 0 0 150px;
+    }
+    .btn-top{
+        width: auto;
+		
+    }
+    .nav-item{
+        padding: 0 0.8em;
+    }
+    .navbar-brand, .nav-link, .call-info{
+        color: white;
+        opacity: 1;
+    }
+	.navbar-brandCheff, .nav-linkCheff, .call-infoCheff{
+        color:#363636;
+        opacity: 1;
+    }
+
+    /*** navbar background change ***/
+    .bg-navbar{
+        width: 100%;
+        background: #fff;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        box-shadow: 0px 0px 25px 0px rgba(214, 214, 214, 0.75);
+    }
+    .bg-navbar .navbar-brand, .bg-navbar .navbar-brandCheff{
+        color:#363636!important;
+    }
+    .bg-navbar .nav-link, .bg-navbar .call-info, .bg-navbar .nav-linkCheff, .bg-navbar .call-infoCheff{
+        opacity: 0.8;
+        color: #363636!important;
+    }
+    .bg-navbar .nav-link:hover, .bg-navbar .call-info:hover, .bg-navbar .nav-linkCheff:hover, .bg-navbar .call-infoCheff:hover{
+        color:#ce3232!important;
+    }
+    /*********************/
+    
+
+    .chef-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5em;
+    }
+   
+    .footer-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

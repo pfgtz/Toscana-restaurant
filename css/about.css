@@ -1,0 +1,65 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "Open Sans", sans-serif;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
+	justify-content: center;
+}
+.aboutUs-section{
+	background: url(../images/italianimage.jpg) no-repeat left;
+	background-size:cover;
+	background-size:55%;
+	background-color: white;
+	padding:100px 0;
+	
+}
+.paragraph{
+	width:55%;
+	float:right;
+	background-color:#20B2AA;
+	padding:100px;
+}
+.paragraph h1{
+	margin-bottom:20px;
+	font-size:30px;
+	font-weight:900;
+	color:white;
+	text-align:center;
+}
+.text{
+	font-size:13px;
+	color:white;
+	line-height:30px;
+	text-align:justify;
+	margin-bottom:40px
+}
+@media screen and (max-width:1200px){
+	.paragraph{
+		padding:80px;
+	}
+}
+@media screen and (max-width:1000px){
+	.aboutUs-section{
+		background-size:100%;
+		padding:100px 40px;
+	}
+	.paragraph{
+		width:100%;
+	}
+	
+}
+@media screen and (max-width:600px){
+	.aboutUs-section{
+		padding:0;
+	}
+	.paragraph{
+		padding:90px;
+	}
+	
+}
